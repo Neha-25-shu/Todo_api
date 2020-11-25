@@ -1,10 +1,8 @@
-# Todo_api
-
-# Django Rest Framework Todo App
+## Django Rest Framework Todo App
 
 A Simple Django Rest API Todo list generator with pagination and filtering.
 
-# Technology Stack We have used
+### Technology Stack
 
 1. Python 3.6
 2. Django REST Framework
@@ -12,26 +10,15 @@ A Simple Django Rest API Todo list generator with pagination and filtering.
 4. Google Chrome v.83.0.4103.61    
 5. Google Chrome driver v.83.0.4103.61
 
-# Linting:
+### Linting:
 
 make lint
 
 
-# APIs Details
-
-See documentation <a href=" ">here</a>
-
-# Testing:
-
-python manage.py test
-
-# Run the server
-
-To run the server simply use: python manage.py runserver
-
-# Todo
+### Todo
 
 Todo are objects without logic on it, basically a todo contains just the following fields:
+
 
 |Field|Description|Type| 
 |----|-----|-------|
@@ -40,61 +27,62 @@ Todo are objects without logic on it, basically a todo contains just the followi
 
 
 
-# Administrator side
+### Administrator side
    * Perform CRUD operation on todo
 
-# Project Structure:
- 
+### Project Structure:
+
+
 ```
 .
 ├── applist
 │   ├── admin.py
 │   ├── apps.py
 │   ├── __init__.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── 0001_initial.cpython-37.pyc
-│   │       ├── 0001_initial.cpython-39.pyc
-│   │       ├── __init__.cpython-37.pyc
-│   │       └── __init__.cpython-39.pyc
-│   ├── models.py
+│   ├── migrations : database migrations
+│   ├── models.py : database models for applist app
 │   ├── __pycache__
-│   │   ├── admin.cpython-37.pyc
-│   │   ├── admin.cpython-39.pyc
-│   │   ├── apps.cpython-37.pyc
-│   │   ├── apps.cpython-39.pyc
-│   │   ├── __init__.cpython-37.pyc
-│   │   ├── __init__.cpython-39.pyc
-│   │   ├── models.cpython-37.pyc
-│   │   ├── models.cpython-39.pyc
-│   │   ├── serializers.cpython-37.pyc
-│   │   ├── serializers.cpython-39.pyc
-│   │   ├── urls.cpython-37.pyc
-│   │   ├── urls.cpython-39.pyc
-│   │   ├── views.cpython-37.pyc
-│   │   └── views.cpython-39.pyc
-│   ├── serializers.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
+│   ├── serializers.py : serializers for the models
+│   ├── tests.py : test cases for view
+│   ├── urls.py : urls for applist app
+│   └── views.py : These views are called by API endpoints
 ├── db.sqlite3
 ├── manage.py
-├── requirements.txt.
+├── requirements.txt : requirements needs to be install
 └── todo
+    ├── API.md : API documentation
     ├── asgi.py
     ├── __init__.py
     ├── __pycache__
-    │   ├── __init__.cpython-39.pyc
-    │   ├── settings.cpython-39.pyc
-    │   ├── urls.cpython-39.pyc
-    │   └── wsgi.cpython-39.pyc
-    ├── README.md
-    ├── settings.py
-    ├── urls.py
+    ├── README.md : documentation file
+    ├── settings.py : settings file for the project.
+    ├── urls.py : base urls for apps of the projects
     └── wsgi.py
 
-
 ```
- 
+
+
+## Setup 
+
+Firstly clone the repositroy then,
+
+Install Dependencies:
+```
+cd Todo
+pip install -r requirements.txt
+```
+Make Migrations:
+```
+./manage.py makemigrations
+./manage.py migrate
+```
+Start server for your REST-API:
+```
+./manage.py runserver
+```
+Testing:
+```
+python manage.py test
+```
+
+
