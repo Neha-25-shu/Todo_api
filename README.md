@@ -1,10 +1,10 @@
 # Todo_api
 
-<b>Django Rest Framework Todo App
+# Django Rest Framework Todo App
 
 A Simple Django Rest API Todo list generator with pagination and filtering.
 
-<b>Technology Stack We have used</b>
+# Technology Stack We have used
 
 1. Python 3.6
 2. Django REST Framework
@@ -12,24 +12,24 @@ A Simple Django Rest API Todo list generator with pagination and filtering.
 4. Google Chrome v.83.0.4103.61    
 5. Google Chrome driver v.83.0.4103.61
 
-<b>Linting:</b>
+# Linting:
 
 make lint
 
 
-<b>APIs Details</b>
+# APIs Details
 
 See documentation <a href=" ">here</a>
 
-<b>Testing:</b>
+# Testing:
 
 python manage.py test
 
-<b>Run the server</b>
+# Run the server
 
 To run the server simply use: python manage.py runserver
 
-<b>Todo</b>
+# Todo
 
 Todo are objects without logic on it, basically a todo contains just the following fields:
 
@@ -40,8 +40,8 @@ Todo are objects without logic on it, basically a todo contains just the followi
 
 
 
-<b>Administrator side</b>
+# Administrator side
    * Perform CRUD operation on todo
 
-<b>Project Structure:</b>
+# Project Structure:
  
