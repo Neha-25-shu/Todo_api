@@ -17,9 +17,7 @@ A Simple Django Rest API Todo list generator with pagination and filtering.
 make lint
 
 
-# APIs Details
 
-See documentation <a href=" ">here</a>
 
 # Testing:
 
